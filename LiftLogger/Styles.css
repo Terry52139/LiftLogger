@@ -1,0 +1,162 @@
+/* Lobby */
+
+body{
+  overflow-y:hidden;
+  background-color: rgb(28, 156, 230);
+  color:white;
+}
+
+.bg-img{
+  position:relative;
+  background-color: rgba(59, 59, 59, 0.8);
+  overflow-x:hidden;
+}
+
+.initial{
+  background-image: url('Images/ashley-byrd-VLHNfKF1Uec-unsplash.jpg');
+  width:100vw;
+  height:100vh;
+  z-index:-1;
+  position:relative;
+}
+
+
+.load-final{
+  position:relative;
+  bottom:275px;
+  display: block; /* Ensure it's displayed as a block element */
+  text-align: center; /* Center the content horizontally */
+  margin-top: 20px;
+}
+
+.lobby-header{
+  position:absolute;
+  top:30%;
+  left:35%;
+  color:white;
+}
+
+.lobby-header-2{
+  position:relative;
+  top:20px;
+}
+
+
+/* Animation */
+
+.left-half{
+  background: url('Images/Elevator.png');
+  width: 0%;
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  transition: 4s ease;
+  z-index:5;
+  top:0px;
+  border-right:3px white solid;
+}
+
+.right-half{
+  background: url('Images/Elevator.png');
+  width: 0%;
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  transition: 4s ease;
+  z-index:5;
+  top:0px;
+  border-left:3px white solid; 
+}
+
+.left-half-entry{
+  width:50%;
+}
+
+.right-half-entry{
+  width:50%;
+}
+
+.left-half-exit
+{
+  width:0%;
+}
+
+.right-half-exit
+{
+  width:0%;
+}
+
+.post-load{
+  z-index:-10;
+}
+
+
+
+
+/* Loader */
+
+.box{
+  box-shadow: 6px 6px 3px rgb(86, 86, 86);
+  background-color: white;
+  padding:8rem 0rem;
+  margin: 4rem 22rem;
+  border: 2px solid rgb(97, 97, 97);
+}
+
+.fa-solid{
+  margin:0 0.2rem;
+}
+
+.link-test:hover{
+  opacity:0.3;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-bottom:16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  position:absolute;
+  left:45%;
+  top:37%;
+  opacity:0;
+}
+
+.load-data{
+  position:absolute;
+  bottom:6rem;
+  left:31rem;
+  opacity:0;
+}
+
+.navbar{
+  background-color: rgb(8, 139, 215);
+  margin-bottom: 2%;
+}
+
+.navbar-brand{
+  margin-left:3rem;
+  padding-right:52.5rem;
+}
+
+.nav-link{
+  margin-right:2rem;
+}
+
+.website{
+  position: absolute;
+  top:0;
+  z-index:-3;
+  background-color: rgb(28, 156, 230);
+  overflow-y: auto;
+  border: 30px white solid;
+  margin: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
